@@ -44,7 +44,7 @@ True
 10 // 2
 
 
-#Variaveis
+#Variaveis e constantes - atribuir valores a uma variavel ou constante
 
 #string 
 nome = "introdução ao worpress"
