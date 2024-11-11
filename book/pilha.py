@@ -40,5 +40,32 @@ def tchau(nome):
 
 # essa pilha usada para guardar as variaveis de multiplas funções é denominada pilha de chamada
 
+## PILHA DE CHAMADA COM RECURSÃO
+
+#FUNÇÕES RECURSIVAS TAMBÉM PODEM USAR PILHA DE CHAMADA
+
+# exemplo fat(fatorial).fat(5) = 5*4*3*2*1 = 120
+
+# fat(3) = 3*2*1 = 6
+
+# abaixo temos uma função recursiva para calcular o fatorial de um numero
+
+def fat(x):
+    if x == 1:
+        return 1
+    else:
+        return x * fat(x-1)  # a função chama a si mesma (recursividade )
+    
+print(fat(3))
+
+# recapitulando:
+
+# recursão é quando uma função chama a si mesma
+# toda função recursiva tem o caso base, que é a condição que faz a função parar de chamar a si mesma e caso recursivo, que é a condição que faz a função chamar a si mesma
+# uma pilha tem duas operações principais: push e pop
+# todas as chamadas de função vão para a pilha de chamada
+# a pilha de chamada pode ficar muito grande, o que pode consumir muita memória, para este caso é melhor usar um loop
+
+
 
 
