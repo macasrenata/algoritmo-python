@@ -67,5 +67,18 @@ print(fat(3))
 # a pilha de chamada pode ficar muito grande, o que pode consumir muita memória, para este caso é melhor usar um loop
 
 
+# exercicio:
+# Suponha que você acidentalmente escreva uma função recursiva que fique executando infinitamente. 
+#Como você viu, seu computador aloca memória na pilha para cada chamada de função.
+# O que aocntece com a pilha quando a função recursiva fica executando infinitamente?
+
+# resposta: Ocorre um erro de estouro de pilha (stack overflow error). 
+# Isso ocorre porque o computador tem um limite para o tamanho da pilha de chamada. 
+# Quando a pilha de chamada excede esse limite, ocorre um erro de estouro de pilha.
+
+# A pilha cresce eternamente.
+# Cada programa tem uma limitada quantidade de espaço na pilha de chamada.
+# Quando o seu programa fica sem espaço(o que eventualmente acontece),
+# ele é finalizado com um erro de 'overflow'(esrouro) da pilha de chamada.
 
 
