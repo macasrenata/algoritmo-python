@@ -110,3 +110,61 @@ def binary_search(arr, item):
 print(binary_search([1, 3, 5, 7, 9], 3))
 
 
+
+# Quicksort
+
+# O Quicksort é um algoritmo de ordenação muito mais rapido que o algoritimo de ordenação de seleção e de bolha
+# O  algoritmo Quicksort também utiliza a técnica de dividir para conquistar, mas ele não divide o array em subarrays de tamanhos iguais.
+
+# alguns arrays não precisam ser ordenados, quando ele esta vazio ou com um elemento
+
+# caso base: se o array tiver menos de 2 elementos, retorne o array
+
+# caso recursivo: escolha um elemento do array e divida o array em 2 subarrays
+
+def quicksort(array):
+    if len(array) < 2:
+        return array
+    
+# um array com 2 elementos é simples de ordenar, basta verificar se o primeiro elemento é maior que o segundo e trocar de lugar se for o caso
+
+# caso base: se o array tiver 2 elementos, retorne o array ordenado
+
+# caso recursivo: escolha um elemento do array e divida o array em 2 subarrays
+
+def quicksort(array):
+    if len(array) < 2:
+        return array
+    else:
+        pivot = array[0]
+        less = [i for i in array[1:] if i <= pivot]
+        greater = [i for i in array[1:] if i > pivot]
+        return quicksort(less) + [pivot] + quicksort(greater)
+    
+print(quicksort([10, 5, 2, 3]))
+
+# um array com 3 elementos é um pouco mais complicado, mas ainda é facil de ordenar
+
+# escolhemos elemento do array que chamamos de pivô (primeiro item do array)
+# encontramos os elementos que são menores do que o pivô e os que são maiores
+# isso é chamado de particionamento
+
+# - então vc tem um subarray com os elementos menores do que o pivô
+# - pivô
+# - um subarray com os elementos maiores do que o pivô
+
+# os dois subarrays não estão ordenados, mas vc pode ordena-los facilmente com o quicksort
+
+# se vc ordenar os subarrays e juntar tudo, vc terá um array ordenado
+
+# os passos para ordenar um array de 3 elementos são:
+
+# 1. Escolha um elemento do array e chame-o de pivô
+# 2. Divida os elementos restantes em 2 subarrays: elementos menores do que o pivô e elementos maiores do que o pivô
+# 3. Ordene os subarrays e junte-os, ou seja execute o quicksort nos subarrays recursivamente
+
+# Notação BigO revisada:
+
+# quicksort é unico, pois sua velocidade depende da escolha do pivô
+
+
