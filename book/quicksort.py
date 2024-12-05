@@ -132,16 +132,16 @@ def quicksort(array):
 
 # caso recursivo: escolha um elemento do array e divida o array em 2 subarrays
 
-def quicksort(array):
+def quicksort2(array):
     if len(array) < 2:
         return array
     else:
         pivot = array[0]
         less = [i for i in array[1:] if i <= pivot]
         greater = [i for i in array[1:] if i > pivot]
-        return quicksort(less) + [pivot] + quicksort(greater)
+        return quicksort2(less) + [pivot] + quicksort2(greater)
     
-print(quicksort([10, 5, 2, 3]))
+print(quicksort2([10, 5, 2, 3]))
 
 # um array com 3 elementos é um pouco mais complicado, mas ainda é facil de ordenar
 
@@ -166,5 +166,7 @@ print(quicksort([10, 5, 2, 3]))
 # Notação BigO revisada:
 
 # quicksort é unico, pois sua velocidade depende da escolha do pivô
+
+# tempo de execução de big0 para quicksort é O(n log n)
 
 
