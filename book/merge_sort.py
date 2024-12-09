@@ -49,3 +49,9 @@ print_items([1, 2, 3])
 # no caso de merge sort e quicksort, ambos tem tempo de execução O(n log n), mas o quicksort é mais rapido na pratica mesmo tendo o mesmo tempo de execução
 
 # pois ele funciona no caso médio em O(n log n) e no pior caso em O(n²), já o merge sort sempre tem tempo de execução O(n log n)
+
+
+# CASO MEDIO VERSUS PIOR CASO 
+
+# o tempo de execução de um algoritmo pode variar dependendo dos dados de entrada (pivôs do quicksort)
+
