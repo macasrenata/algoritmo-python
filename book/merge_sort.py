@@ -55,3 +55,39 @@ print_items([1, 2, 3])
 
 # o tempo de execução de um algoritmo pode variar dependendo dos dados de entrada (pivôs do quicksort)
 
+
+# PIOR CASO: o tempo de execução do algoritmo é o mais lento possível para qualquer entrada de tamanho n
+
+# exemplo: o quicksort tem tempo de execução O(n²) no pior caso, que ocorre quando o pivô é sempre o menor ou o maior item da lista
+
+# codigo do pior caso do quicksort:
+
+def quicksort(array):
+    if len(array) < 2:
+        return array
+    else:
+        pivot = array[0]
+        less = [i for i in array[1:] if i <= pivot]
+        greater = [i for i in array[1:] if i > pivot]
+        return quicksort(less) + [pivot] + quicksort(greater)
+    
+print(quicksort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+
+# o pior caso do quicksort ocorre quando o pivô é sempre o menor ou o maior item da lista
+
+# o pior caso do merge sort é sempre O(n log n), pois ele sempre divide o array em subarrays de tamanhos iguais
+
+#--------------------------------------------------------------------------------------------------------------------
+
+# MELHOR CASO: o tempo de execução do algoritmo é o mais rapido possível para qualquer entrada de tamanho n
+
+# exemplo: o quicksort tem tempo de execução O(n log n) no melhor caso, que ocorre quando o pivô divide a lista em duas metades iguais
+
+# o melhor caso do merge sort é sempre O(n log n), pois ele sempre divide o array em subarrays de tamanhos iguais
+
+# -------------------------------------------------------------------------------------------------------------------
+
+# CASO MEDIO: o tempo de execução do algoritmo é o esperado para qualquer entrada de tamanho n
+
+
+
