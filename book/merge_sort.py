@@ -89,5 +89,71 @@ print(quicksort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
 
 # CASO MEDIO: o tempo de execução do algoritmo é o esperado para qualquer entrada de tamanho n
 
+# EXERCICIOS:
+
+# QUANTO TEMPO LEVBARIA, EM NOTAÇÃO BIG O PARA COMPLETAR CADA UMA DAS SEGUINTES OPERAÇÕES?
+
+# 1. imprimir o valor de cada elemento em um array.
+
+# O(n)
+
+# 2. Duplicar o valor de cada elemento em um array.
+
+# O(n)
+
+# 3. Duplicar o valor apenas do primeiro elemento em um array.
+
+# O(1)
+
+# 4. Criar uma tabela de multiplicação com todos os elementos do array. Assim, caso o seu array seja [2,3,7,8,10], você primeiro multiplicara cada elemento por 2. Depois, multiplicara cada elemento por 3 e então por 7, e assim por diante.
+
+# O(n²)
+
+
+## RECAPITULANDO:
+
+# A estratégia DC (dividir para conquistar) envolve dividir o problema em subproblemas menores e resolver esses subproblemas de forma recursiva. Se vc estiver usando DC em uma lista o caso-base sera geralmente um array vazio ou com apenas 1 elemento
+
+# Se estiver usando quicksort, escolha um elemento aleatório como pivô. O tempo de execução do quicksort é O(n log n) no caso médio e O(n²) no pior caso
+
+# A constante, na notação BIg O, é relevante em alguns casos. Esta é a razão pelo qual o quicksort é mais rapido que o merge sort na pratica, mesmo tendo o mesmo tempo de execução
+
+# A constante, na notação Big O, dificilmente sera relevante na comparação entre pesquisa simples e pesquisa binaria. POis a pesquisa binaria é O(log n), que é muito mais rapido que a pesquisa simples, que é O(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
