@@ -29,3 +29,35 @@ def hash(s):
 print(hash('abacate'))
 
 # tabela hash é uma estrutura de dados que implementa uma função hash
+
+
+# Coloque uma função hash em um conjunto com um array e vc terá uma estrutura de dados chamada tabela hash
+
+# lista e arrays mapeam diretamente para memória, porém função hash é mais inteligente, é usada para indicar onde armazenar os elementos
+
+# tabelas hash são muito rapidas
+
+# vc nuca vai ter que implmentar uma função hash, pq elas já existem em python e em outras linguagens
+
+# tabelas hash no python são chamadas de dicionarios
+
+# tabelas hash no javascript são chamadas de objetos
+
+# exemplo de tabela hash em python
+
+book = dict()
+
+book['apple'] = 0.67
+book['milk'] = 1.49
+book['avocado'] = 1.49
+
+print(book)
+
+# {'apple': 0.67, 'milk': 1.49, 'avocado': 1.49} 
+
+print(book['avocado'])
+
+# 1.49
+
+# uma tabela hash mapeia chaves e valores!!!
+
